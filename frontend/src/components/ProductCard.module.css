@@ -1,0 +1,91 @@
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border: 1px solid #e8f5e9;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.1); transform: translateY(-2px); }
+
+.topRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.name { font-size: 1.05rem; font-weight: 700; color: #1a2e1a; margin-bottom: 0.2rem; }
+
+.meta { font-size: 0.8rem; color: #888; }
+
+.badge {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border: 1px solid;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 0.4rem 1rem;
+}
+
+.detail { display: flex; flex-direction: column; }
+
+.detailLabel {
+  font-size: 0.7rem;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.detailValue { font-size: 0.88rem; color: #333; font-weight: 500; }
+
+.actionBtn {
+  align-self: flex-start;
+  padding: 0.5rem 1.1rem;
+  background: #2d7a4f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 0.1rem;
+}
+.actionBtn:hover { background: #1a5c39; }
+
+.qtyRow { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem; }
+.qtyLabel { font-size: 0.82rem; color: #555; }
+.qtyPct { font-size: 0.78rem; color: #888; font-weight: 600; }
+.progressBg { height: 6px; background: #e0e0e0; border-radius: 3px; margin-bottom: 0.65rem; }
+.progressFill { height: 100%; border-radius: 3px; transition: width 0.4s; }
+
+.ledger { background: #f8f8f8; border-radius: 8px; padding: 0.6rem 0.8rem; margin-top: 0.25rem; }
+.ledgerTitle { font-size: 0.75rem; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.3rem; }
+.ledgerRow { display: flex; justify-content: space-between; font-size: 0.82rem; color: #444; padding: 0.15rem 0; }
+
+.btnRow { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.25rem; }
+
+.sellBtn {
+  padding: 0.45rem 1rem;
+  background: #6a1b9a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.sellBtn:hover { background: #4a148c; }
